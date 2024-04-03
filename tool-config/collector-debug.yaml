@@ -1,0 +1,10 @@
+receivers:
+  zipkin:
+exporters:
+  logging:
+service:
+  pipelines:
+    traces:
+      receivers: [zipkin]
+      processors: []
+      exporters: [logging]

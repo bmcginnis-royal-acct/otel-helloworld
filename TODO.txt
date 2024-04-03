@@ -1,0 +1,5 @@
+TODO
+------
+[ ] See https://www.youtube.com/watch?v=AD3biFn-sK0&list=PLDqi6CuDzubz5viRapQ049TjJMOCCu9MJ&index=7
+
+Add prometheus metrics to demo
