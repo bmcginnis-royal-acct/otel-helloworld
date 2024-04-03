@@ -45,6 +45,8 @@ public class CartController {
   public Mono<ResponseEntity<ResponseBody<Cart>>> getCart(
       @PathVariable String id, @RequestHeader HttpHeaders httpHeaders) {
 
+    log.info("\n\n====> Handling request for Get cart by id.");
+
     var retries = httpHeaders.get(CommonHeaders.HDR_RETRY);
     if ((retries != null) && !retries.isEmpty()) {
       log.info("Processing retry request attempt number: {}.", retries.get(0));

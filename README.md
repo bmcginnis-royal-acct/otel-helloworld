@@ -80,11 +80,12 @@ docker run \
 When you see the output contain the phrase 
 *"Everything is ready. Begin running and processing data."* it's ready to use.
 
+### Running the REST API so it sends telemetry to the Collector
 In order to use the otel collector, we have to tell our
 service to use our collector as the destination for its traces and metrics. 
 You'll use a special startup script to run for otel collector:
 ```
-$ run-with-auto-inst-to-otel-collector.sh
+$ ./run-with-auto-inst-to-otel-collector.sh
 ```
 
 ## Build target and run on command line
